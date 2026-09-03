@@ -1,0 +1,18 @@
+---
+const resumeUrl = 'https://storage.vamsi.fyi/resume/Sept_3.pdf';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, follow" />
+    <meta http-equiv="refresh" content={`0; url=${resumeUrl}`} />
+    <link rel="canonical" href={resumeUrl} />
+    <title>Vamsi Varma — Resume</title>
+  </head>
+  <body>
+    <p>Opening <a href={resumeUrl}>Vamsi Varma’s resume</a>…</p>
+    <script define:vars={{ resumeUrl }}>window.location.replace(resumeUrl);</script>
+  </body>
+</html>
