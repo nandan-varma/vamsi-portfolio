@@ -1,0 +1,12 @@
+{
+  "name": "Vamsi Varma | Oracle Fusion Finance",
+  "short_name": "Vamsi Varma",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f7f7f3",
+  "theme_color": "#1b2a25",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
+  ]
+}

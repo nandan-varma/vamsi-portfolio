@@ -3,20 +3,58 @@ const skills = [
   'Oracle Fusion Financials', 'General Ledger', 'Accounts Payable',
   'Accounts Receivable', 'Business Analysis', 'Reporting'
 ];
+const siteUrl = 'https://vamsi.fyi';
+const pageTitle = 'Vamsi Varma | Oracle Fusion Finance Functional Consultant';
+const pageDescription = 'Vamsi Varma is an Oracle Fusion Finance Functional Consultant in Hyderabad, India, specializing in General Ledger, Accounts Payable, finance operations, and business analysis.';
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Vamsi Varma',
+  url: siteUrl,
+  jobTitle: 'Oracle Fusion Finance Functional Consultant',
+  email: 'mailto:varmapssv519@gmail.com',
+  address: { '@type': 'PostalAddress', addressLocality: 'Hyderabad', addressCountry: 'IN' },
+  knowsAbout: ['Oracle Fusion Financials', 'General Ledger', 'Accounts Payable', 'Accounts Receivable', 'Business Analysis', 'Finance Operations'],
+  alumniOf: [
+    { '@type': 'EducationalOrganization', name: 'David Memorial Institute of Management' },
+    { '@type': 'EducationalOrganization', name: 'Pinnacle IMC' }
+  ]
+};
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en-IN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio of Vamsi Varma, Oracle Fusion Finance Functional Consultant." />
-    <title>Vamsi Varma — Oracle Fusion Finance</title>
+    <meta name="description" content={pageDescription} />
+    <meta name="author" content="Vamsi Varma" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href={`${siteUrl}/`} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#1b2a25" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Vamsi Varma" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:url" content={`${siteUrl}/`} />
+    <meta property="og:image" content={`${siteUrl}/og-image.png`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Vamsi Varma — Oracle Fusion Finance Functional Consultant" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDescription} />
+    <meta name="twitter:image" content={`${siteUrl}/og-image.png`} />
+    <script type="application/ld+json" set:html={JSON.stringify(personSchema)}></script>
+    <title>{pageTitle}</title>
   </head>
   <body>
     <main>
       <nav aria-label="Primary navigation">
-        <a class="brand" href="#top" aria-label="Vamsi Varma home">V<span>.</span></a>
+        <a class="brand" href="#top" aria-label="Vamsi Varma home">V</a>
         <div class="nav-links">
           <a href="#expertise">Expertise</a>
           <a href="#experience">Experience</a>
@@ -108,7 +146,7 @@ const skills = [
   nav, section, footer { padding-left: max(5vw, 1.5rem); padding-right: max(5vw, 1.5rem); }
   nav { height: 82px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #daddd5; }
   a { color: inherit; text-decoration: none; } :global(::selection) { background: #e35e3d; color: #fff9f0; } :global(:focus-visible) { outline: 2px solid #e35e3d; outline-offset: 5px; }
-  .brand { font: 600 1.45rem/1 'DM Mono', monospace; letter-spacing: -.03em; } .brand span { color: #e35e3d; }
+  .brand { color: #e35e3d; font: 600 1.45rem/1 'DM Mono', monospace; letter-spacing: -.03em; }
   .nav-links { display: flex; gap: clamp(1.1rem, 3vw, 3rem); font: 0.78rem 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .04em; }
   .nav-links a { border-bottom: 1px solid transparent; padding-bottom: .2rem; } .nav-links a:hover { border-color: #16231f; }
   .hero { min-height: 665px; padding-top: clamp(5.7rem, 12vw, 10.5rem); display: flex; flex-direction: column; }
