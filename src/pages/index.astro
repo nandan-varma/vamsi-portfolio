@@ -16,7 +16,7 @@ const skills = [
   <body>
     <main>
       <nav aria-label="Primary navigation">
-        <a class="brand" href="#top" aria-label="Vamsi Varma home">VV<span>.</span></a>
+        <a class="brand" href="#top" aria-label="Vamsi Varma home">V<span>.</span></a>
         <div class="nav-links">
           <a href="#expertise">Expertise</a>
           <a href="#experience">Experience</a>
@@ -107,8 +107,8 @@ const skills = [
   main { overflow: hidden; }
   nav, section, footer { padding-left: max(5vw, 1.5rem); padding-right: max(5vw, 1.5rem); }
   nav { height: 82px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #daddd5; }
-  a { color: inherit; text-decoration: none; }
-  .brand { font: 600 1.45rem/1 'DM Mono', monospace; letter-spacing: -.1em; } .brand span { color: #e35e3d; }
+  a { color: inherit; text-decoration: none; } :global(::selection) { background: #e35e3d; color: #fff9f0; } :global(:focus-visible) { outline: 2px solid #e35e3d; outline-offset: 5px; }
+  .brand { font: 600 1.45rem/1 'DM Mono', monospace; letter-spacing: -.03em; } .brand span { color: #e35e3d; }
   .nav-links { display: flex; gap: clamp(1.1rem, 3vw, 3rem); font: 0.78rem 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .04em; }
   .nav-links a { border-bottom: 1px solid transparent; padding-bottom: .2rem; } .nav-links a:hover { border-color: #16231f; }
   .hero { min-height: 665px; padding-top: clamp(5.7rem, 12vw, 10.5rem); display: flex; flex-direction: column; }
