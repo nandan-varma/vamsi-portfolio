@@ -1,0 +1,133 @@
+---
+const skills = [
+  'Oracle Fusion Financials', 'General Ledger', 'Accounts Payable',
+  'Accounts Receivable', 'Business Analysis', 'Reporting'
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio of Vamsi Varma, Oracle Fusion Finance Functional Consultant." />
+    <title>Vamsi Varma — Oracle Fusion Finance</title>
+  </head>
+  <body>
+    <main>
+      <nav aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Vamsi Varma home">VV<span>.</span></a>
+        <div class="nav-links">
+          <a href="#expertise">Expertise</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <p class="eyebrow">Oracle Fusion Finance · Hyderabad, India</p>
+        <h1 id="hero-title">Financial systems,<br /><em>made clearer.</em></h1>
+        <div class="hero-bottom">
+          <p class="intro">I’m Vamsi Varma, a finance functional consultant focused on the processes that turn complex financial operations into reliable, well-configured systems.</p>
+          <a class="email-link" href="mailto:varmapssv519@gmail.com">Let’s connect <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="statement" aria-label="Profile summary">
+        <p class="section-label">01 / Approach</p>
+        <div>
+          <h2>Business insight meets functional precision.</h2>
+          <p>With a grounding in finance and payments, I bring analytical rigor to Oracle Fusion Financials implementations—from transaction workflows to close-ready accounting.</p>
+        </div>
+      </section>
+
+      <section class="expertise" id="expertise" aria-labelledby="expertise-title">
+        <div class="section-header">
+          <p class="section-label">02 / Expertise</p>
+          <h2 id="expertise-title">Core capabilities</h2>
+        </div>
+        <div class="skills-grid">
+          {skills.map((skill, index) => <div class="skill"><span>0{index + 1}</span>{skill}</div>)}
+        </div>
+      </section>
+
+      <section class="project" aria-labelledby="project-title">
+        <div class="project-number">Selected project <span>01</span></div>
+        <div class="project-content">
+          <p class="eyebrow">Oracle Fusion Financials</p>
+          <h2 id="project-title">Implementation<br />& process design</h2>
+          <p>Hands-on functional analysis across the core finance lifecycle, with particular focus on the paths between Payables, Subledger Accounting, and General Ledger.</p>
+          <ul>
+            <li>AP invoice entry, validation, holds, approvals & payment processing</li>
+            <li>GL setup: ledgers, calendars, currencies, journals & period close</li>
+            <li>Payment methods, batches, accounting & transfer to GL</li>
+            <li>FBDI, ADFdi, Spreadsheet Loader & manual entry workflows</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="experience" id="experience" aria-labelledby="experience-title">
+        <div class="section-header">
+          <p class="section-label">03 / Experience</p>
+          <h2 id="experience-title">Where I’ve contributed</h2>
+        </div>
+        <article class="role">
+          <div class="role-meta"><span>Apr — Oct 2025</span><span>Hyderabad, India</span></div>
+          <div>
+            <h3>AML & KYC Analyst</h3>
+            <p class="company">Accenture · Finance & Payments Domain</p>
+          </div>
+          <p class="role-copy">Analyzed financial transactions and payment workflows for anomalies and AML compliance. Supported reconciliation, transaction monitoring, and financial reporting validation.</p>
+        </article>
+      </section>
+
+      <section class="education" aria-labelledby="education-title">
+        <p class="section-label">04 / Education</p>
+        <div class="education-list" id="education-title">
+          <div><span>2026</span><p><strong>MBA, Finance</strong><br />David Memorial Institute of Management, Hyderabad</p></div>
+          <div><span>2024</span><p><strong>B.B.A.</strong><br />Pinnacle IMC, Hyderabad</p></div>
+        </div>
+      </section>
+
+      <footer id="contact">
+        <p class="section-label">05 / Contact</p>
+        <h2>Let’s make finance<br /><em>work better.</em></h2>
+        <a class="footer-email" href="mailto:varmapssv519@gmail.com">varmapssv519@gmail.com <span aria-hidden="true">↗</span></a>
+        <div class="footer-bottom"><span>© 2026 Vamsi Varma</span><span>English · Hindi · Telugu</span></div>
+      </footer>
+    </main>
+  </body>
+</html>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+  :global(*) { box-sizing: border-box; }
+  :global(html) { scroll-behavior: smooth; }
+  :global(body) { margin: 0; background: #f7f7f3; color: #16231f; font-family: 'DM Sans', sans-serif; }
+  main { overflow: hidden; }
+  nav, section, footer { padding-left: max(5vw, 1.5rem); padding-right: max(5vw, 1.5rem); }
+  nav { height: 82px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #daddd5; }
+  a { color: inherit; text-decoration: none; }
+  .brand { font: 600 1.45rem/1 'DM Mono', monospace; letter-spacing: -.1em; } .brand span { color: #e35e3d; }
+  .nav-links { display: flex; gap: clamp(1.1rem, 3vw, 3rem); font: 0.78rem 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .04em; }
+  .nav-links a { border-bottom: 1px solid transparent; padding-bottom: .2rem; } .nav-links a:hover { border-color: #16231f; }
+  .hero { min-height: 665px; padding-top: clamp(5.7rem, 12vw, 10.5rem); display: flex; flex-direction: column; }
+  .eyebrow, .section-label { margin: 0; font: 0.72rem/1.45 'DM Mono', monospace; letter-spacing: .06em; text-transform: uppercase; color: #68726d; }
+  h1, h2, h3, p { margin-top: 0; } h1, h2 { font-weight: 500; letter-spacing: -.055em; }
+  h1 { margin: 1.1rem 0 auto; font-size: clamp(3.65rem, 8.1vw, 8.5rem); line-height: .93; } em { font-family: 'Playfair Display', serif; font-weight: 500; }
+  .hero-bottom { margin-top: 4rem; padding-top: 1.4rem; border-top: 1px solid #daddd5; display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; }
+  .intro { max-width: 480px; margin: 0; font-size: 1.1rem; line-height: 1.55; } .email-link { font: .78rem 'DM Mono', monospace; white-space: nowrap; } .email-link span, .footer-email span { color: #e35e3d; font-size: 1.1rem; }
+  .statement { padding-top: 10.5rem; padding-bottom: 10.5rem; display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; background: #1b2a25; color: #ecf0e8; }
+  .statement .section-label { color: #9da9a2; } .statement h2 { max-width: 700px; margin-bottom: 2.2rem; font-size: clamp(2.4rem, 5vw, 4.8rem); line-height: .99; }
+  .statement div > p { max-width: 510px; margin: 0; color: #c2cbc5; font-size: 1.13rem; line-height: 1.6; }
+  .expertise, .experience { padding-top: 8rem; padding-bottom: 8rem; } .section-header { display: flex; justify-content: space-between; gap: 2rem; align-items: baseline; margin-bottom: 4.3rem; }
+  .section-header h2 { margin: 0; font-size: clamp(2rem, 4vw, 3.5rem); } .skills-grid { border-top: 1px solid #cfd4cc; display: grid; grid-template-columns: repeat(2, 1fr); }
+  .skill { padding: 1.65rem 0; border-bottom: 1px solid #cfd4cc; font-size: clamp(1.2rem, 2vw, 1.65rem); display: flex; gap: 1.2rem; } .skill:nth-child(odd) { border-right: 1px solid #cfd4cc; padding-right: 1.5rem; } .skill:nth-child(even) { padding-left: 1.5rem; } .skill span { color: #8a918d; font: .68rem 'DM Mono', monospace; padding-top: .4rem; }
+  .project { padding-top: 8rem; padding-bottom: 8rem; background: #dbe4da; display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; } .project-number { font: .78rem 'DM Mono', monospace; text-transform: uppercase; color: #607068; } .project-number span { color: #e35e3d; }
+  .project-content { max-width: 770px; } .project h2 { margin: .85rem 0 2rem; font-size: clamp(2.65rem, 5vw, 5rem); line-height: .96; } .project-content > p:not(.eyebrow) { max-width: 560px; font-size: 1.13rem; line-height: 1.58; }
+  ul { padding: 1.5rem 0 0; margin: 2.6rem 0 0; border-top: 1px solid #afbeb1; list-style: none; } li { padding: .75rem 0 .75rem 1.3rem; position: relative; border-bottom: 1px solid #c1ccc1; line-height: 1.45; } li::before { content: '•'; position: absolute; left: 0; color: #e35e3d; }
+  .role { display: grid; grid-template-columns: .8fr 1.25fr 1.4fr; gap: 3rem; padding: 2rem 0; border-top: 1px solid #cfd4cc; } .role-meta { font: .7rem/1.65 'DM Mono', monospace; color: #68726d; display: flex; flex-direction: column; } h3 { margin-bottom: .3rem; font-size: 1.45rem; font-weight: 500; letter-spacing: -.03em; } .company, .role-copy { margin: 0; line-height: 1.55; } .company { color: #68726d; } .role-copy { font-size: .98rem; }
+  .education { padding-top: 5rem; padding-bottom: 8rem; display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; border-top: 1px solid #cfd4cc; } .education-list > div { display: grid; grid-template-columns: 100px 1fr; padding: 1.5rem 0; border-bottom: 1px solid #cfd4cc; } .education-list span { font: .75rem 'DM Mono', monospace; color: #68726d; } .education-list p { margin: 0; line-height: 1.55; } .education-list strong { font-size: 1.08rem; font-weight: 500; }
+  footer { padding-top: 8rem; padding-bottom: 2rem; background: #e35e3d; color: #fff9f0; } footer .section-label { color: #ffe2d7; } footer h2 { margin: 2rem 0 3.6rem; font-size: clamp(3rem, 6.4vw, 6.5rem); line-height: .94; } .footer-email { display: inline-block; padding-bottom: .25rem; border-bottom: 1px solid #fff9f0; font-size: clamp(1.05rem, 2.1vw, 1.6rem); } .footer-email span { color: #1b2a25; } .footer-bottom { margin-top: 8rem; padding-top: 1.1rem; border-top: 1px solid #f89d86; display: flex; justify-content: space-between; font: .68rem 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .04em; color: #ffe2d7; }
+  @media (max-width: 700px) { nav { height: 68px; } .nav-links { gap: 1rem; font-size: .65rem; } .hero { min-height: 600px; } .hero-bottom, .statement, .project, .education { display: block; } .hero-bottom { margin-top: 3rem; } .email-link { margin-top: 1.5rem; display: block; } .statement { padding-top: 6rem; padding-bottom: 6rem; } .statement .section-label, .project-number, .education .section-label { margin-bottom: 3rem; } .expertise, .experience { padding-top: 5.5rem; padding-bottom: 5.5rem; } .section-header { display: block; margin-bottom: 2.7rem; } .section-header .section-label { margin-bottom: 1.1rem; } .skills-grid { grid-template-columns: 1fr; } .skill:nth-child(odd), .skill:nth-child(even) { border-right: 0; padding-left: 0; padding-right: 0; } .project { padding-top: 5.5rem; padding-bottom: 5.5rem; } .role { grid-template-columns: 1fr; gap: 1rem; padding: 1.5rem 0; } .role-meta { flex-direction: row; justify-content: space-between; } .education { padding-top: 4rem; padding-bottom: 5.5rem; } footer { padding-top: 5.5rem; } .footer-bottom { margin-top: 6rem; font-size: .6rem; } }
+</style>
