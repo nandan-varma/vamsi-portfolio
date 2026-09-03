@@ -1,24 +1,14 @@
 ---
-const skills = [
-  'Oracle Fusion Financials', 'General Ledger', 'Accounts Payable',
-  'Accounts Receivable', 'Business Analysis', 'Reporting'
-];
+const skills = ['Oracle Fusion Financials', 'General Ledger', 'Accounts Payable', 'Accounts Receivable', 'Business Analysis', 'Reporting'];
 const siteUrl = 'https://vamsi.fyi';
 const pageTitle = 'Vamsi Varma | Oracle Fusion Finance Functional Consultant';
 const pageDescription = 'Vamsi Varma is an Oracle Fusion Finance Functional Consultant in Hyderabad, India, specializing in General Ledger, Accounts Payable, finance operations, and business analysis.';
 const personSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Person',
-  name: 'Vamsi Varma',
-  url: siteUrl,
-  jobTitle: 'Oracle Fusion Finance Functional Consultant',
-  email: 'mailto:varmapssv519@gmail.com',
+  '@context': 'https://schema.org', '@type': 'Person', name: 'Vamsi Varma', url: siteUrl,
+  jobTitle: 'Oracle Fusion Finance Functional Consultant', email: 'mailto:varmapssv519@gmail.com',
   address: { '@type': 'PostalAddress', addressLocality: 'Hyderabad', addressCountry: 'IN' },
   knowsAbout: ['Oracle Fusion Financials', 'General Ledger', 'Accounts Payable', 'Accounts Receivable', 'Business Analysis', 'Finance Operations'],
-  alumniOf: [
-    { '@type': 'EducationalOrganization', name: 'David Memorial Institute of Management' },
-    { '@type': 'EducationalOrganization', name: 'Pinnacle IMC' }
-  ]
+  alumniOf: [{ '@type': 'EducationalOrganization', name: 'David Memorial Institute of Management' }, { '@type': 'EducationalOrganization', name: 'Pinnacle IMC' }]
 };
 ---
 
@@ -27,145 +17,41 @@ const personSchema = {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content={pageDescription} />
-    <meta name="author" content="Vamsi Varma" />
+    <meta name="description" content={pageDescription} /><meta name="author" content="Vamsi Varma" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <link rel="canonical" href={`${siteUrl}/`} />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta name="theme-color" content="#1b2a25" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Vamsi Varma" />
-    <meta property="og:title" content={pageTitle} />
-    <meta property="og:description" content={pageDescription} />
-    <meta property="og:url" content={`${siteUrl}/`} />
-    <meta property="og:image" content={`${siteUrl}/og-image.png`} />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Vamsi Varma — Oracle Fusion Finance Functional Consultant" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={pageTitle} />
-    <meta name="twitter:description" content={pageDescription} />
-    <meta name="twitter:image" content={`${siteUrl}/og-image.png`} />
-    <script type="application/ld+json" set:html={JSON.stringify(personSchema)}></script>
-    <title>{pageTitle}</title>
+    <link rel="canonical" href={`${siteUrl}/`} /><link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" /><link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#080808" />
+    <meta property="og:type" content="website" /><meta property="og:site_name" content="Vamsi Varma" /><meta property="og:title" content={pageTitle} /><meta property="og:description" content={pageDescription} /><meta property="og:url" content={`${siteUrl}/`} /><meta property="og:image" content={`${siteUrl}/og-image.png`} /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta property="og:image:alt" content="Vamsi Varma — Oracle Fusion Finance Functional Consultant" />
+    <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={pageTitle} /><meta name="twitter:description" content={pageDescription} /><meta name="twitter:image" content={`${siteUrl}/og-image.png`} />
+    <script type="application/ld+json" set:html={JSON.stringify(personSchema)}></script><title>{pageTitle}</title>
   </head>
   <body>
+    <nav aria-label="Primary navigation"><a class="brand" href="#top" aria-label="Vamsi Varma home">V</a><div class="nav-links"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div><span class="availability">Available for opportunities</span></nav>
     <main>
-      <nav aria-label="Primary navigation">
-        <a class="brand" href="#top" aria-label="Vamsi Varma home">V</a>
-        <div class="nav-links">
-          <a href="#expertise">Expertise</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-
-      <section class="hero" id="top" aria-labelledby="hero-title">
-        <p class="eyebrow">Oracle Fusion Finance · Hyderabad, India</p>
-        <h1 id="hero-title">Financial systems,<br /><em>made clearer.</em></h1>
-        <div class="hero-bottom">
-          <p class="intro">I’m Vamsi Varma, a finance functional consultant focused on the processes that turn complex financial operations into reliable, well-configured systems.</p>
-          <a class="email-link" href="mailto:varmapssv519@gmail.com">Let’s connect <span aria-hidden="true">↗</span></a>
-        </div>
-      </section>
-
-      <section class="statement" aria-label="Profile summary">
-        <p class="section-label">01 / Approach</p>
-        <div>
-          <h2>Business insight meets functional precision.</h2>
-          <p>With a grounding in finance and payments, I bring analytical rigor to Oracle Fusion Financials implementations—from transaction workflows to close-ready accounting.</p>
-        </div>
-      </section>
-
-      <section class="expertise" id="expertise" aria-labelledby="expertise-title">
-        <div class="section-header">
-          <p class="section-label">02 / Expertise</p>
-          <h2 id="expertise-title">Core capabilities</h2>
-        </div>
-        <div class="skills-grid">
-          {skills.map((skill, index) => <div class="skill"><span>0{index + 1}</span>{skill}</div>)}
-        </div>
-      </section>
-
-      <section class="project" aria-labelledby="project-title">
-        <div class="project-number">Selected project <span>01</span></div>
-        <div class="project-content">
-          <p class="eyebrow">Oracle Fusion Financials</p>
-          <h2 id="project-title">Implementation<br />& process design</h2>
-          <p>Hands-on functional analysis across the core finance lifecycle, with particular focus on the paths between Payables, Subledger Accounting, and General Ledger.</p>
-          <ul>
-            <li>AP invoice entry, validation, holds, approvals & payment processing</li>
-            <li>GL setup: ledgers, calendars, currencies, journals & period close</li>
-            <li>Payment methods, batches, accounting & transfer to GL</li>
-            <li>FBDI, ADFdi, Spreadsheet Loader & manual entry workflows</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="experience" id="experience" aria-labelledby="experience-title">
-        <div class="section-header">
-          <p class="section-label">03 / Experience</p>
-          <h2 id="experience-title">Where I’ve contributed</h2>
-        </div>
-        <article class="role">
-          <div class="role-meta"><span>Apr — Oct 2025</span><span>Hyderabad, India</span></div>
-          <div>
-            <h3>AML & KYC Analyst</h3>
-            <p class="company">Accenture · Finance & Payments Domain</p>
-          </div>
-          <p class="role-copy">Analyzed financial transactions and payment workflows for anomalies and AML compliance. Supported reconciliation, transaction monitoring, and financial reporting validation.</p>
-        </article>
-      </section>
-
-      <section class="education" aria-labelledby="education-title">
-        <p class="section-label">04 / Education</p>
-        <div class="education-list" id="education-title">
-          <div><span>2026</span><p><strong>MBA, Finance</strong><br />David Memorial Institute of Management, Hyderabad</p></div>
-          <div><span>2024</span><p><strong>B.B.A.</strong><br />Pinnacle IMC, Hyderabad</p></div>
-        </div>
-      </section>
-
-      <footer id="contact">
-        <p class="section-label">05 / Contact</p>
-        <h2>Let’s make finance<br /><em>work better.</em></h2>
-        <a class="footer-email" href="mailto:varmapssv519@gmail.com">varmapssv519@gmail.com <span aria-hidden="true">↗</span></a>
-        <div class="footer-bottom"><span>© 2026 Vamsi Varma</span><span>English · Hindi · Telugu</span></div>
-      </footer>
+      <section class="hero" id="top" aria-labelledby="hero-title"><span class="orb orb-one" aria-hidden="true"></span><span class="orb orb-two" aria-hidden="true"></span><div class="hero-top"><p>Oracle Fusion Finance</p><p>Hyderabad · India</p></div><div class="hero-copy"><p class="kicker">Vamsi Varma / 01</p><h1 id="hero-title">Turning financial<br />complexity into <em>clarity.</em></h1></div><div class="hero-footer"><p>Functional consultant for thoughtful finance operations, reliable systems, and better decisions.</p><a href="#expertise" class="scroll-link">Explore profile <span>↓</span></a></div></section>
+      <section class="statement panel" data-reveal aria-labelledby="statement-title"><span class="orb orb-three" aria-hidden="true"></span><p class="index">02 / Perspective</p><div class="wide-copy"><h2 id="statement-title">Good finance systems should feel <em>inevitable.</em></h2><p>My work sits between business process and functional configuration—bringing disciplined thinking to the details that make financial operations run with confidence.</p></div><p class="side-note">Finance · Payments · Oracle Fusion</p></section>
+      <section class="expertise panel" id="expertise" data-reveal aria-labelledby="expertise-title"><p class="index">03 / Expertise</p><div class="section-heading"><h2 id="expertise-title">The essentials,<br /><em>well understood.</em></h2><p>Core functional knowledge across the finance lifecycle.</p></div><div class="skill-list">{skills.map((skill, index) => <div class="skill"><span>0{index + 1}</span><p>{skill}</p><i aria-hidden="true">↗</i></div>)}</div></section>
+      <section class="project panel" id="work" data-reveal aria-labelledby="project-title"><span class="orb orb-four" aria-hidden="true"></span><p class="index">04 / Selected work</p><div class="project-grid"><div><p class="kicker">Oracle Fusion Financials</p><h2 id="project-title">Implementation<br />& <em>process design.</em></h2></div><div class="project-detail"><p>I analyze the path from a transaction to its final accounting—so systems, teams, and controls stay aligned.</p><ul><li>AP invoice to payment processing</li><li>General Ledger setup and close</li><li>Subledger Accounting and journal flow</li><li>FBDI, ADFdi, and spreadsheet loaders</li></ul></div></div><span class="project-mark" aria-hidden="true">V</span></section>
+      <section class="experience panel" id="experience" data-reveal aria-labelledby="experience-title"><p class="index">05 / Experience</p><div class="section-heading"><h2 id="experience-title">Experience with<br /><em>the details.</em></h2></div><article class="role"><div class="role-date"><span>2025</span><span>Apr — Oct</span></div><div><h3>AML & KYC Analyst</h3><p>Accenture · Finance & Payments</p></div><p class="role-summary">Analyzed financial transactions and payment workflows for anomalies and AML compliance. Supported reconciliation, transaction monitoring, and financial reporting validation.</p></article><div class="education"><p>Education</p><div><span>2026</span><strong>MBA, Finance</strong><small>David Memorial Institute of Management</small></div><div><span>2024</span><strong>B.B.A.</strong><small>Pinnacle IMC</small></div></div></section>
+      <footer id="contact" data-reveal><span class="orb orb-five" aria-hidden="true"></span><p class="index">06 / Contact</p><div><p class="kicker">A good conversation starts here.</p><h2>Let’s make finance<br /><em>work better.</em></h2><a class="email" href="mailto:varmapssv519@gmail.com">varmapssv519@gmail.com <span>↗</span></a></div><div class="footer-meta"><span>© 2026 Vamsi Varma</span><span>English · Hindi · Telugu</span><a href="#top">Back to top ↑</a></div></footer>
     </main>
+    <script>const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;if(!reduceMotion){const observer=new IntersectionObserver((entries)=>entries.forEach(({isIntersecting,target})=>{if(isIntersecting)target.classList.add('is-visible')}),{threshold:.16});document.querySelectorAll('[data-reveal]').forEach((section)=>observer.observe(section))}else document.querySelectorAll('[data-reveal]').forEach((section)=>section.classList.add('is-visible'));</script>
   </body>
 </html>
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
-  :global(*) { box-sizing: border-box; }
-  :global(html) { scroll-behavior: smooth; }
-  :global(body) { margin: 0; background: #f7f7f3; color: #16231f; font-family: 'DM Sans', sans-serif; }
-  main { overflow: hidden; }
-  nav, section, footer { padding-left: max(5vw, 1.5rem); padding-right: max(5vw, 1.5rem); }
-  nav { height: 82px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #daddd5; }
-  a { color: inherit; text-decoration: none; } :global(::selection) { background: #e35e3d; color: #fff9f0; } :global(:focus-visible) { outline: 2px solid #e35e3d; outline-offset: 5px; }
-  .brand { color: #e35e3d; font: 600 1.45rem/1 'DM Mono', monospace; letter-spacing: -.03em; }
-  .nav-links { display: flex; gap: clamp(1.1rem, 3vw, 3rem); font: 0.78rem 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .04em; }
-  .nav-links a { border-bottom: 1px solid transparent; padding-bottom: .2rem; } .nav-links a:hover { border-color: #16231f; }
-  .hero { min-height: 665px; padding-top: clamp(5.7rem, 12vw, 10.5rem); display: flex; flex-direction: column; }
-  .eyebrow, .section-label { margin: 0; font: 0.72rem/1.45 'DM Mono', monospace; letter-spacing: .06em; text-transform: uppercase; color: #68726d; }
-  h1, h2, h3, p { margin-top: 0; } h1, h2 { font-weight: 500; letter-spacing: -.055em; }
-  h1 { margin: 1.1rem 0 auto; font-size: clamp(3.65rem, 8.1vw, 8.5rem); line-height: .93; } em { font-family: 'Playfair Display', serif; font-weight: 500; }
-  .hero-bottom { margin-top: 4rem; padding-top: 1.4rem; border-top: 1px solid #daddd5; display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; }
-  .intro { max-width: 480px; margin: 0; font-size: 1.1rem; line-height: 1.55; } .email-link { font: .78rem 'DM Mono', monospace; white-space: nowrap; } .email-link span, .footer-email span { color: #e35e3d; font-size: 1.1rem; }
-  .statement { padding-top: 10.5rem; padding-bottom: 10.5rem; display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; background: #1b2a25; color: #ecf0e8; }
-  .statement .section-label { color: #9da9a2; } .statement h2 { max-width: 700px; margin-bottom: 2.2rem; font-size: clamp(2.4rem, 5vw, 4.8rem); line-height: .99; }
-  .statement div > p { max-width: 510px; margin: 0; color: #c2cbc5; font-size: 1.13rem; line-height: 1.6; }
-  .expertise, .experience { padding-top: 8rem; padding-bottom: 8rem; } .section-header { display: flex; justify-content: space-between; gap: 2rem; align-items: baseline; margin-bottom: 4.3rem; }
-  .section-header h2 { margin: 0; font-size: clamp(2rem, 4vw, 3.5rem); } .skills-grid { border-top: 1px solid #cfd4cc; display: grid; grid-template-columns: repeat(2, 1fr); }
-  .skill { padding: 1.65rem 0; border-bottom: 1px solid #cfd4cc; font-size: clamp(1.2rem, 2vw, 1.65rem); display: flex; gap: 1.2rem; } .skill:nth-child(odd) { border-right: 1px solid #cfd4cc; padding-right: 1.5rem; } .skill:nth-child(even) { padding-left: 1.5rem; } .skill span { color: #8a918d; font: .68rem 'DM Mono', monospace; padding-top: .4rem; }
-  .project { padding-top: 8rem; padding-bottom: 8rem; background: #dbe4da; display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; } .project-number { font: .78rem 'DM Mono', monospace; text-transform: uppercase; color: #607068; } .project-number span { color: #e35e3d; }
-  .project-content { max-width: 770px; } .project h2 { margin: .85rem 0 2rem; font-size: clamp(2.65rem, 5vw, 5rem); line-height: .96; } .project-content > p:not(.eyebrow) { max-width: 560px; font-size: 1.13rem; line-height: 1.58; }
-  ul { padding: 1.5rem 0 0; margin: 2.6rem 0 0; border-top: 1px solid #afbeb1; list-style: none; } li { padding: .75rem 0 .75rem 1.3rem; position: relative; border-bottom: 1px solid #c1ccc1; line-height: 1.45; } li::before { content: '•'; position: absolute; left: 0; color: #e35e3d; }
-  .role { display: grid; grid-template-columns: .8fr 1.25fr 1.4fr; gap: 3rem; padding: 2rem 0; border-top: 1px solid #cfd4cc; } .role-meta { font: .7rem/1.65 'DM Mono', monospace; color: #68726d; display: flex; flex-direction: column; } h3 { margin-bottom: .3rem; font-size: 1.45rem; font-weight: 500; letter-spacing: -.03em; } .company, .role-copy { margin: 0; line-height: 1.55; } .company { color: #68726d; } .role-copy { font-size: .98rem; }
-  .education { padding-top: 5rem; padding-bottom: 8rem; display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; border-top: 1px solid #cfd4cc; } .education-list > div { display: grid; grid-template-columns: 100px 1fr; padding: 1.5rem 0; border-bottom: 1px solid #cfd4cc; } .education-list span { font: .75rem 'DM Mono', monospace; color: #68726d; } .education-list p { margin: 0; line-height: 1.55; } .education-list strong { font-size: 1.08rem; font-weight: 500; }
-  footer { padding-top: 8rem; padding-bottom: 2rem; background: #e35e3d; color: #fff9f0; } footer .section-label { color: #ffe2d7; } footer h2 { margin: 2rem 0 3.6rem; font-size: clamp(3rem, 6.4vw, 6.5rem); line-height: .94; } .footer-email { display: inline-block; padding-bottom: .25rem; border-bottom: 1px solid #fff9f0; font-size: clamp(1.05rem, 2.1vw, 1.6rem); } .footer-email span { color: #1b2a25; } .footer-bottom { margin-top: 8rem; padding-top: 1.1rem; border-top: 1px solid #f89d86; display: flex; justify-content: space-between; font: .68rem 'DM Mono', monospace; text-transform: uppercase; letter-spacing: .04em; color: #ffe2d7; }
-  @media (max-width: 700px) { nav { height: 68px; } .nav-links { gap: 1rem; font-size: .65rem; } .hero { min-height: 600px; } .hero-bottom, .statement, .project, .education { display: block; } .hero-bottom { margin-top: 3rem; } .email-link { margin-top: 1.5rem; display: block; } .statement { padding-top: 6rem; padding-bottom: 6rem; } .statement .section-label, .project-number, .education .section-label { margin-bottom: 3rem; } .expertise, .experience { padding-top: 5.5rem; padding-bottom: 5.5rem; } .section-header { display: block; margin-bottom: 2.7rem; } .section-header .section-label { margin-bottom: 1.1rem; } .skills-grid { grid-template-columns: 1fr; } .skill:nth-child(odd), .skill:nth-child(even) { border-right: 0; padding-left: 0; padding-right: 0; } .project { padding-top: 5.5rem; padding-bottom: 5.5rem; } .role { grid-template-columns: 1fr; gap: 1rem; padding: 1.5rem 0; } .role-meta { flex-direction: row; justify-content: space-between; } .education { padding-top: 4rem; padding-bottom: 5.5rem; } footer { padding-top: 5.5rem; } .footer-bottom { margin-top: 6rem; font-size: .6rem; } }
+  :global(*){box-sizing:border-box}:global(html){background:#080808}:global(body){margin:0;background:#080808;color:#f5f5f1;font-family:'DM Sans',sans-serif}:global(::selection){background:#f5f5f1;color:#080808}:global(:focus-visible){outline:2px solid #fff;outline-offset:6px}a{color:inherit;text-decoration:none}
+  nav{position:fixed;z-index:10;inset:0 0 auto;height:76px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 clamp(1.25rem,4vw,4.5rem);border-bottom:1px solid rgba(255,255,255,.14);background:rgba(8,8,8,.74);backdrop-filter:blur(16px)}.brand{font:500 1.35rem/1 'DM Mono',monospace;color:#fff}.nav-links{display:flex;gap:clamp(1rem,2.5vw,2.8rem);font:.68rem 'DM Mono',monospace;letter-spacing:.08em;text-transform:uppercase}.nav-links a{opacity:.62;transition:opacity .25s ease}.nav-links a:hover{opacity:1}.availability{justify-self:end;color:#aaa;font:.65rem 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.06em}
+  main{height:100svh;overflow-y:auto;overflow-x:hidden;scroll-snap-type:y mandatory;scroll-behavior:smooth}section,footer{min-height:100svh;scroll-snap-align:start;scroll-snap-stop:always;position:relative;isolation:isolate;overflow:hidden;padding:clamp(6.6rem,10vh,8rem) clamp(1.25rem,6vw,6rem) clamp(2rem,5vh,4rem);display:flex;flex-direction:column}.panel,footer{border-top:1px solid rgba(255,255,255,.16)}
+  .hero{padding-top:calc(76px + clamp(2rem,5vh,5rem));justify-content:space-between}.hero-top,.hero-footer,.footer-meta{display:flex;align-items:flex-start;justify-content:space-between;gap:2rem}.hero-top p,.hero-footer p,.index,.kicker,.side-note{margin:0;font:.68rem/1.45 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.08em}.hero-top p{color:#aaa}.hero-copy{position:relative;z-index:1;margin:auto 0}.kicker,.index{color:#999}h1,h2,h3,p{margin-top:0}h1,h2{margin-bottom:0;font-weight:500;letter-spacing:-.065em}h1{max-width:1100px;font-size:clamp(3.25rem,8.3vw,9.4rem);line-height:.88}h2{font-size:clamp(2.7rem,5.8vw,6.8rem);line-height:.91}em{font-family:'Playfair Display',serif;font-weight:500;letter-spacing:-.075em}.hero-footer p{max-width:390px;color:#d5d5d0;font:clamp(.94rem,1.25vw,1.15rem)/1.52 'DM Sans',sans-serif;text-transform:none;letter-spacing:0}.scroll-link{align-self:flex-end;white-space:nowrap;font:.7rem 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.06em}.scroll-link span{display:inline-block;margin-left:.55rem;font-size:1rem;animation:arrow 1.7s ease-in-out infinite}
+  .orb{position:absolute;z-index:-1;display:block;border-radius:50%;border:1px solid rgba(255,255,255,.2);background:radial-gradient(circle at 34% 27%,rgba(255,255,255,.17),rgba(255,255,255,.02) 54%,transparent 70%);filter:blur(.2px);pointer-events:none;animation:float 12s ease-in-out infinite alternate}.orb-one{width:min(39vw,570px);aspect-ratio:1;right:-7vw;top:17%}.orb-two{width:min(11vw,150px);aspect-ratio:1;left:44%;bottom:13%;opacity:.55;animation-delay:-5s}.orb-three{width:min(25vw,340px);aspect-ratio:1;right:12%;bottom:-7%;animation-delay:-3s}.orb-four{width:min(28vw,390px);aspect-ratio:1;left:-6%;top:18%;animation-delay:-7s}.orb-five{width:min(48vw,700px);aspect-ratio:1;right:-12%;top:-19%;opacity:.78;animation-delay:-2s}
+  .statement{justify-content:space-between}.wide-copy{max-width:1050px;margin:auto 0}.wide-copy h2{max-width:880px}.wide-copy p{max-width:520px;margin:2.4rem 0 0;color:#c4c4c0;font-size:clamp(1.05rem,1.5vw,1.35rem);line-height:1.55}.side-note{color:#999}.section-heading{display:grid;grid-template-columns:1.5fr .5fr;align-items:end;gap:3rem;margin:clamp(2.5rem,7vh,6rem) 0 auto}.section-heading p{color:#aaa;font-size:1rem;line-height:1.55;max-width:260px}.skill-list{border-top:1px solid rgba(255,255,255,.28)}.skill{display:grid;grid-template-columns:90px 1fr auto;align-items:center;gap:1rem;min-height:clamp(3.7rem,7vh,5.3rem);border-bottom:1px solid rgba(255,255,255,.2);transition:padding .35s ease,background .35s ease}.skill:hover{padding:0 1rem;background:#f5f5f1;color:#080808}.skill span{font:.68rem 'DM Mono',monospace;color:#999}.skill:hover span{color:#555}.skill p{margin:0;font-size:clamp(1.1rem,2vw,1.7rem);letter-spacing:-.035em}.skill i{font-style:normal;font-size:1.2rem;opacity:.4;transition:transform .35s ease,opacity .35s ease}.skill:hover i{transform:translate(4px,-4px);opacity:1}
+  .project{background:#f5f5f1;color:#080808}.project .index,.project .kicker{color:#636363}.project-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(3rem,9vw,11rem);margin:auto 0}.project h2{margin-top:1.25rem}.project-detail{align-self:end;max-width:440px}.project-detail>p{font-size:clamp(1.1rem,1.55vw,1.45rem);line-height:1.48}ul{padding:0;margin:2.5rem 0 0;list-style:none;border-top:1px solid #aaa}li{padding:.85rem 0;border-bottom:1px solid #aaa;font-size:.91rem}li::before{content:'—';padding-right:.65rem}.project-mark{position:absolute;right:clamp(1.25rem,6vw,6rem);bottom:clamp(1rem,4vh,3rem);font:500 clamp(3rem,7vw,7rem)/.8 'DM Mono',monospace;color:#080808;opacity:.95}
+  .experience{justify-content:space-between}.experience .section-heading{margin:2rem 0 auto}.role{display:grid;grid-template-columns:.45fr 1fr 1.2fr;gap:3rem;padding:1.65rem 0;border-top:1px solid rgba(255,255,255,.35)}.role-date{display:flex;flex-direction:column;gap:.35rem;color:#999;font:.68rem 'DM Mono',monospace}h3{margin:0 0 .35rem;font-size:clamp(1.25rem,2vw,1.75rem);font-weight:500;letter-spacing:-.04em}.role div:nth-child(2) p{margin:0;color:#aaa;font-size:.92rem}.role-summary{margin:0;color:#d5d5d0;line-height:1.55}.education{display:grid;grid-template-columns:.65fr 1fr 1fr;gap:1rem;margin-top:1.5rem;color:#aaa;font-size:.82rem}.education p{margin:0;font:.68rem 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.08em}.education div{display:grid;grid-template-columns:50px 1fr;gap:.15rem .7rem}.education span{grid-row:span 2;color:#777;font:.68rem 'DM Mono',monospace}.education strong{color:#f5f5f1;font-weight:500}.education small{font-size:.75rem}
+  footer{justify-content:space-between}footer>div:nth-of-type(1){margin:auto 0}footer h2{margin:.75rem 0 2.4rem}.email{display:inline-block;padding-bottom:.45rem;border-bottom:1px solid #f5f5f1;font-size:clamp(1rem,2vw,1.55rem);transition:opacity .2s}.email:hover{opacity:.7}.email span{margin-left:.5rem}.footer-meta{color:#888;font:.65rem 'DM Mono',monospace;letter-spacing:.06em;text-transform:uppercase}.footer-meta a{color:#f5f5f1}
+  [data-reveal]>:not(.orb){opacity:0;transform:translateY(26px);transition:opacity .75s cubic-bezier(.2,.65,.2,1),transform .75s cubic-bezier(.2,.65,.2,1)}[data-reveal].is-visible>:not(.orb){opacity:1;transform:none}[data-reveal].is-visible>:nth-child(2){transition-delay:.08s}[data-reveal].is-visible>:nth-child(3){transition-delay:.16s}[data-reveal].is-visible>:nth-child(4){transition-delay:.24s}@keyframes float{0%{transform:translate3d(0,0,0) scale(1)}45%{transform:translate3d(-14px,20px,0) scale(1.04)}100%{transform:translate3d(18px,-16px,0) scale(.97)}}@keyframes arrow{50%{transform:translateY(5px)}}
+  @media(max-width:760px){nav{height:64px;grid-template-columns:1fr auto}.availability{display:none}.nav-links{gap:.8rem;font-size:.58rem}section,footer{min-height:100svh;padding:calc(64px + 1.8rem) 1.25rem 1.5rem}.hero{padding-top:calc(64px + 2rem)}h1{font-size:clamp(3rem,14vw,5.2rem);line-height:.9}h2{font-size:clamp(2.7rem,12vw,4.4rem)}.hero-top{font-size:.58rem}.hero-footer{display:block}.scroll-link{display:block;margin-top:1.8rem}.orb-one{width:75vw;right:-24vw;top:17%}.orb-two{width:26vw;left:52%;bottom:18%}.section-heading,.project-grid{display:block}.section-heading p{margin-top:1.7rem}.skill-list{margin-top:2.8rem}.skill{grid-template-columns:42px 1fr auto;min-height:4.3rem}.skill:hover{padding:0 .45rem}.project-grid{margin:auto 0}.project-detail{margin-top:2.6rem}.project-detail>p{font-size:1.04rem}.project-mark{font-size:4rem}.role{grid-template-columns:1fr;gap:1rem}.role-date{flex-direction:row;justify-content:space-between}.education{grid-template-columns:1fr 1fr;margin-top:1.35rem}.education>p{grid-column:1/-1;margin-bottom:.6rem}.footer-meta{display:grid;grid-template-columns:1fr 1fr;gap:.65rem}.footer-meta a{grid-column:1/-1;margin-top:.6rem}}
+  @media(prefers-reduced-motion:reduce){:global(*){animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}main{scroll-snap-type:y proximity}[data-reveal]>:not(.orb){opacity:1;transform:none;transition:none}}
 </style>
